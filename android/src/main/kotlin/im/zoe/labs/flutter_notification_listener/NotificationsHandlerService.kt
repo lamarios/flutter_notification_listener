@@ -226,7 +226,7 @@ class NotificationsHandlerService: MethodChannel.MethodCallHandler, Notification
             .build()
 
         Log.d(TAG, "promote the service to foreground")
-        startForeground(ONGOING_NOTIFICATION_ID, notification)
+        startForeground(ONGOING_NOTIFICATION_ID, notification,  ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
 
         return true
     }
