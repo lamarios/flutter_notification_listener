@@ -163,6 +163,7 @@ class NotificationsListener {
   }
 }
 
+@pragma('vm:entry-point') // prevent dart from stripping out this function on release build in Flutter 3.x
 /// callbackDispatcher use to install background channel
 void callbackDispatcher({inited = true}) {
   WidgetsFlutterBinding.ensureInitialized();
