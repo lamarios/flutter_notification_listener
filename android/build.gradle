@@ -28,6 +28,11 @@ android {
     compileSdkVersion 34
     namespace 'im.zoe.labs.flutter_notification_listener'
 
+    kotlinOptions {
+        jvmTarget = "21"
+    }
+
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
